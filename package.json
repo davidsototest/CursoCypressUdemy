@@ -18,5 +18,8 @@
   "homepage": "https://github.com/davidsototest/CursoCypressUdemy#readme",
   "devDependencies": {
     "cypress": "^12.5.1"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.7.6"
   }
 }
