@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+// en este archivo podemos declarar funciones que luego podemos llamar desde nuestos DOC.JS
+
+//example:
+
+//aqui podemos declara metodos personalizados
+
+
+Cypress.Commands.add("cerrarSecsionDeExample", (etiqueta) => {
+    cy.get(etiqueta).click()
+})

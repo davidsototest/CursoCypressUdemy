@@ -4,7 +4,12 @@
   "description": "primer proyecto cypres",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "open": "node_modules\\.bin\\cypress open",
+    "test": "node_modules\\.bin\\cypress run",
+    "testChrome": "npm test -- --browser chrome --headless",
+    "testDashboard": "npm run test -- --record --key 7952d218-15b8-4b10-9ebd-4dd8812d4c91 --browser chrome --headless",
+    "testConjunto1": "npm run testDashboard -- --spec \"D:\\ReposGit\\CursoCypress\\cypress\\e2e\\2-Primeros-TEst\\conjunto1\\*\""
+    
   },
   "repository": {
     "type": "git",
@@ -17,7 +22,7 @@
   },
   "homepage": "https://github.com/davidsototest/CursoCypressUdemy#readme",
   "devDependencies": {
-    "cypress": "^12.5.1"
+    "cypress": "^12.7.0"
   },
   "dependencies": {
     "cypress-real-events": "^1.7.6"
